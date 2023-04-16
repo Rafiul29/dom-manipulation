@@ -1,7 +1,9 @@
 
-
+//selected dom element
 const sections=document.querySelectorAll('section')
 const trans=document.querySelector(".trans")
+const navlinks=document.querySelector('.nav-links')
+
 const grandiants=["coral","green","chocolate","tomato"]
 
 const option={
@@ -38,4 +40,15 @@ function navScroll(entries){
 
 sections.forEach(function(section){
   observer.observe(section)
+})
+
+
+//smooth scroll
+navlinks.addEventListener('click',(e)=>{
+  e.preventDefault();
+  if(e.target.classList.contains('nav-link')){
+    const id= e.target.getAttribute('href')
+    document.querySelector(id).scrollIntoView({behavior:"smooth"})
+   
+  }
 })
