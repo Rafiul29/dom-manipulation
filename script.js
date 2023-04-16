@@ -31,8 +31,19 @@ function main(){
         div.remove()
         div=null
     }
-    generateTostMessage(`${output.value} copied`)
+ if(isHexValid(output.value)){
+  generateTostMessage(`${output.value} copied`)
+ }else{
+  alert('Invalid color code')
+ }
   } )
+
+  output.addEventListener("keyup",function(e){
+      const color=e.target.value;
+      if(color && isHexValid(color)){
+        root.style.backgroundColor=color
+      }
+  })
   
 }
 
@@ -86,3 +97,17 @@ div.addEventListener("click",function(){
 
 // dynamic toast message
 // clear toast message
+
+
+
+
+function isHexValid(color){
+if(color.length !==7) return false;
+if(color[0] !=='#') return false;
+color=color.substring(1)
+return /^[0-9A-Fa-f]{6}$/i.test(color)
+}
+
+//step -9 create ishexvalid function
+//step -10 implement chnage handler on input field
+//step -11 --prevebt copying hex code if it is not valid
