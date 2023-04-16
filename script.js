@@ -11,11 +11,19 @@ window.onload=()=>{
 function main(){
   const root=document.getElementById("root")
   const btnEl=document.getElementById("change-btn")
+  const output=document.getElementById("output")
+  const copyBtnEl=document.getElementById("copy-btn")
+
   btnEl.addEventListener('click',function(){
     const bgColor=genderateRGBColor()
     root.style.backgroundColor=bgColor
+    output.value=bgColor
   })
 
+  copyBtnEl.addEventListener("click",function(){
+    navigator.clipboard.writeText(output.value)
+  } )
+  
 }
 
 
@@ -35,7 +43,7 @@ function genderateRGBColor(){
   const green=Math.floor(Math.random()*255)
   const blue=Math.floor(Math.random()*255)
 
-  return `rgb(${red},${green},${blue})`
+  return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`
 }
 
 function genderateTextRGBColor(){
@@ -44,5 +52,5 @@ function genderateTextRGBColor(){
   const green=Math.floor(Math.random()*255)
   const blue=Math.floor(Math.random()*255)
 
-  return `rgb(${red},${green},${blue})`
+  return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`
 }
