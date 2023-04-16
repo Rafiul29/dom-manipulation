@@ -21,7 +21,7 @@ function main(){
   btnEl.addEventListener('click',function(){
     const bgColor=genderateRGBColor()
     root.style.backgroundColor=bgColor
-    output.value=bgColor
+    output.value=bgColor.substring(1)
   })
 
   copyBtnEl.addEventListener("click",function(){
@@ -41,7 +41,7 @@ function main(){
   output.addEventListener("keyup",function(e){
       const color=e.target.value;
       if(color && isHexValid(color)){
-        root.style.backgroundColor=color
+        root.style.backgroundColor=`#${color}`
       }
   })
   
@@ -102,9 +102,7 @@ div.addEventListener("click",function(){
 
 
 function isHexValid(color){
-if(color.length !==7) return false;
-if(color[0] !=='#') return false;
-color=color.substring(1)
+if(color.length !==6) return false;
 return /^[0-9A-Fa-f]{6}$/i.test(color)
 }
 
