@@ -1,8 +1,12 @@
 // Change the background color by genderating random ragba color clicking follwing button
-
+// add a tost message copy color
 // step
 
 //step 1 - create onload handler
+
+
+//globals
+let div=null
 
 window.onload=()=>{
   main()
@@ -22,6 +26,12 @@ function main(){
 
   copyBtnEl.addEventListener("click",function(){
     navigator.clipboard.writeText(output.value)
+   
+    if(div!=null){
+        div.remove()
+        div=null
+    }
+    generateTostMessage(`${output.value} copied`)
   } )
   
 }
@@ -54,3 +64,25 @@ function genderateTextRGBColor(){
 
   return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`
 }
+
+function generateTostMessage(msg){
+   div=document.createElement('div');
+  div.innerHTML=msg
+div.className='toast-message toast-message-slide-in'
+div.addEventListener("click",function(){
+  div.classList.remove("toast-message-slide-in")
+  div.classList.add("toast-message-slide-out")
+  div.addEventListener("animationend",function(){
+    div.remove()
+    div=null
+  })
+})
+
+
+  document.body.appendChild(div)
+}
+
+// active toast message
+
+// dynamic toast message
+// clear toast message
