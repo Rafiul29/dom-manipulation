@@ -1,20 +1,25 @@
-
 //select dom element
-const openBtn=document.querySelector(".open")
-const modalContainer=document.querySelector(".modal-container")
-const closeBtn=document.querySelector(".modal-btn")
 
-//btn eventlistener
+const fullImg=document.querySelector('.full-img')
+const smallImg=document.querySelectorAll('.gallery img')
+const modal=document.querySelector('.modal')
 
-openBtn.addEventListener("click",function(){
-  modalContainer.classList.add('show')
- 
+smallImg.forEach(function(img){
+img.addEventListener("click",function(){
+  modal.classList.add('open')
+  fullImg.classList.add("open")
+
+  //chnages the dynamic url
+const originalQuality=img.getAttribute("alt")
+fullImg.src=`img/full/${originalQuality}.jpg`
 })
 
-closeBtn.addEventListener("click",function(){
-  modalContainer.classList.remove('show')
+
 })
 
-modalContainer.addEventListener("click",function(){
-  modalContainer.classList.remove('show')
+modal.addEventListener("click",function(e){
+  if(e.target.classList.contains("modal")){
+    modal.classList.remove("open")
+    fullImg.classList.remove("open")
+  }
 })
