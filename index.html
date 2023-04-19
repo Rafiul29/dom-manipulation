@@ -9,51 +9,9 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav class="container">
-        <div class="logo">
-            <h2>Navbar <span>Effect</span></h2>
-        </div>
-        <ul class="nav-links">
-          <li>
-            <a data-page="home" class="nav-link"  href="#home">Home</a>
-          </li>
-          <li>
-            <a data-page="about" class="nav-link"  href="#about">About</a>
-          </li>
-          <li>
-            <a data-page="services" class="nav-link" href="#services">Services</a>
-          </li>
-          <li>
-            <a data-page="contact" class="nav-link" href="#contact">Contact</a>
-          </li>
-          <div class="trans"></div>
-        </ul>
-      </nav>
-    </header>
+   <div class="progress">
+    <div class="progress-done"  data-done="90">90%</div>
+   </div>
 
-    <section data-index="0" class="home" id="home">
-      <img src="img/1.jpg" alt="" />
-    </section>
-
-    <section data-index="1" class="about" id="about">
-      <img src="img/2.jpg" alt="" />
-    </section>
-
-    <section data-index="2" class="services" id="services">
-      <img src="img/3.jpg" alt="" />
-    </section>
-
-    <section data-index="0" class="contact" id="contact">
-      <img src="img/4.jpg" alt="" />
-    </section>
-
-
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-<script>
-  const scroll =new SmoothScroll(`.navbar a[href="#"]`,{
-    speed:300
-  });
-</script>
   </body>
 </html>
