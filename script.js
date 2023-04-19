@@ -1,7 +1,9 @@
-const progressEl=document.querySelector('.progress-done');
-setTimeout(function(){
-  progressEl.style.width=progressEl.getAttribute('data-done')+"%"
- 
-  progressEl.style.opacity=1
-},1000)
+const hamburgerBtn=document.querySelector(".toggle-btn")
+const mainHeader=document.querySelector(".main-header")
+const overlay=document.querySelector(".overlay")
 
+hamburgerBtn.addEventListener("click",function(){
+  hamburgerBtn.classList.toggle("open");
+  mainHeader.classList.toggle("open");
+  overlay.classList.toggle("open");
+})
