@@ -1,30 +1,28 @@
-const btnEl=document.getElementById('btn');
-const birthdayEl=document.getElementById('birthday')
-const resultEl=document.getElementById('result')
+const btnEl=document.getElementById('btn')
+const billInput=document.getElementById('bill')
+const tipInput=document.getElementById('tip')
+const totalSpan=document.getElementById("totalSpan")
 
 
-function calculateAge(){
-  const birthdayValue=birthdayEl.value;
-  if(birthdayValue===""){
-    alert("please enter your birthday")
-  }else{
-    const age=getAge(birthdayValue)
-    console.log(age)
-      resultEl.innerHTML=`Your age is ${age} ${age>1? "years" :"year"} old`
-  }
+function calculateTotal(){
+  const billValue=billInput.value;
+const tipValue=tipInput.value;
+console.log(Boolean(billValue))
+const totalValue=billValue*(1+tipValue/100)
+  const result=currencyFormeter(totalValue)
+  totalSpan.innerText=result;
+
 }
 
-function getAge(birthdayValue){
-  const currentDate=new Date()
-  const birthdayDate=new Date(birthdayValue)
-  let age=currentDate.getFullYear()-birthdayDate.getFullYear()
-  const month=currentDate.getMonth()-birthdayDate.getMonth()
-  if(month<0 || (month===0 && currentDate.getDate()<birthdayDate.getDate())) {
-    age--
-  }
-return age
+function currencyFormeter(amount){
+  return amount?.toLocaleString('en-us',{
+    style:"currency",
+    currency:"USD"
+  })
 }
 
-btnEl.addEventListener("click",()=>{
-  calculateAge()
+btnEl.addEventListener('click',function(){
+  calculateTotal()
+  billInput.value=""
+  tipInput.value=""
 })

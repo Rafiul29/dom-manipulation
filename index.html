@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Age Calculate</title>
+    <title>Tip Calculate</title>
   </head>
   <body>
     <div class="container">
-      <h1>Age Calculator</h1>
+      <h1>Tip Calculator</h1>
+      <p class="description">
+        Enter the bill amount and tip persentage to calculate the total.
+      </p>
       <div class="form">
-        <label for="birthday">Enter your date of birth</label>
-        <input type="date" id="birthday" name="birthday" />
-        <button id="btn">Calculate Age</button>
-        <p id="result"></p>
+        <div class="form-group">
+          <label for="bill">Bill Amount</label>
+          <input type="number" id="bill" name="bill" required/>
+        </div>
+        <div class="form-group">
+          <label for="tip">Tip percentage</label>
+          <input type="number" id="tip" name="tip" required/>
+        </div>
+        <button id="btn">Calculate</button>
+        <p class="total">Total :<span id="totalSpan"></span> </p>
       </div>
     </div>
 
