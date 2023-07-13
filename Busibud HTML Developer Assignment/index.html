@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Busibud HTML Developer Assignment</title>
+
+    <!-- =========== google font  ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+      --
+    />
+
+    <!--==========scss============  -->
+    <link rel="stylesheet" href="./scss/style.css" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- javascript -->
+    <script src="./js/script.js" defer></script>
+
+    <!-- swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+   
+
+  </head>
+  <body>
+    <!-- header section start -->
+    <header class="header d-flex flex-column gap-2">
+      <div class="header-img">
+        <img src="./image/header.png" alt="" />
+      </div>
+      <!-- navbar section -->
+      <nav
+        class="nav navbar navbar-expand-md navbar-light border-bottom py-3 border-3 border-gray"
+      >
+        <div class="container mx-auto">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul
+              class="navbar-nav mx-auto d-flex justify-content-evenly h5 w-100"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nav1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Nav2</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nav3
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Item 1</a></li>
+                  <li><a class="dropdown-item" href="#">Item 2</a></li>
+                  <li><a class="dropdown-item" href="#">Item 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nav4
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Item 1</a></li>
+                  <li><a class="dropdown-item" href="#">Item 2</a></li>
+                  <li><a class="dropdown-item" href="#">Item 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nav5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nav6</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nav7</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nav8</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+        <!-- hero section start -->
+    <section class="section-hero hero">
+      <div class="container d-sm-flex justify-content-center align-items-center">
+        <div class="hero-container row  ">
+          <div class="hero-left col-md-7 col-sm-12 d-flex flex-column gap-5 ">
+            <div class="hero-text d-flex flex-column gap-3">
+              <h1 class="hero-title fw-bolder lh-base ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h1>
+              <p class="hero-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed
+                commodo est.Pellentesque eu placerat mauris. Etiam ut maximus
+                ante. Suspendisse varius dolor nec bibendum dignissim. Proin in
+                diam a justo sollicitudin mattis eu sagittis nunc. In hac
+                habitasse platea dictumst.
+              </p>
+            </div>
+            <button class="btn-item align-self-start">Check Pricing</button>
+          </div>
+          <div class="hero-right col-md-5 col-sm-12">
+            <img
+              src="image/hero-img.png"
+              alt="hero-image"
+              class="w-100 h-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+    </header>
+    <!-- header section end -->
+
+  
+
+    <!--  section features start-->
+    <main>
+    <section class="section-features section-padding section">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="text-center pb-3">Lorem ipsum dolor sit amet,consectetur adipiscing elit.</h2>
+        </div>
+        <div class="row pt-5 section-features-grid">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card card-item">
+              <div class="card-body d-flex flex-column gap-2 py-4">
+                <h5 class="text-center card-title">Lorem ipsum dolor sit .</h5>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  sed commodo est.Pellentesque eu placerat mauris. Etiam ut
+                  maximus ante. Suspendisse varius dolor nec bibendum dignissim.
+                  Proin in diam a justo sollicitudin mattis eu sagittisnunc. In
+                  hac habitasse.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card card-item">
+              <div class="card-body d-flex flex-column gap-2 py-4">
+                <h5 class="text-center card-title ">Lorem ipsum dolor sit .</h5>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  sed commodo est.Pellentesque eu placerat mauris. Etiam ut
+                  maximus ante. Suspendisse varius dolor nec bibendum dignissim.
+                  Proin in diam a justo sollicitudin mattis eu sagittisnunc. In
+                  hac habitasse.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card card-item ">
+              <div class="card-body d-flex flex-column gap-2 py-4">
+                <h5 class="text-center card-title">Lorem ipsum dolor sit .</h5>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  sed commodo est.Pellentesque eu placerat mauris. Etiam ut
+                  maximus ante. Suspendisse varius dolor nec bibendum dignissim.
+                  Proin in diam a justo sollicitudin mattis eu sagittisnunc. In
+                  hac habitasse.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- features section end-->
+
+
+     <!-- section artwok start-->
+     <section class="section-artwork section-padding section" id="artwork-padding">
+      <div class="container">
+        <div class="section-title pb-5">
+          <h2 class="text-center">Lorem ipsum dolor sit amet,consectetur adipiscing elit.</h2>
+        </div>
+        <div class="section-container row pt-5">
+          <div class="col-lg-4 col-md-4">
+            <div class="artwork-card d-flex flex-column gap-4 p-3">
+              <div class="artwork-img">
+                <img src="./image/artwork20.png" alt="artwok20" class="w-100 h-100">
+              </div>
+                <div class="artwork-text d-flex flex-column gap-3">
+                  <h5 class="artwork-card-title">Lorem ipsum dolor sit .</h5>
+                  <p class="artwork-card-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    sed commodo est.Pellentesque eu placerat mauris. Etiam ut
+                    maximus ante. Suspendisse varius dolor nec bibendum dignissim.
+                    Proin in diam a justo sollicitudin mattis eu sagittisnunc. In
+                    hac habitasse.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="artwork-card d-flex flex-column gap-4 p-3">
+              <div class="artwork-img">
+                <img src="./image/artwork22.png" alt="artwok20" class="w-100 h-100">
+              </div>
+                <div class="artwork-text d-flex flex-column gap-3">
+                  <h5 class="artwork-card-title">Lorem ipsum dolor sit .</h5>
+                  <p class="artwork-card-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    sed commodo est.Pellentesque eu placerat mauris. Etiam ut
+                    maximus ante. Suspendisse varius dolor nec bibendum dignissim.
+                    Proin in diam a justo sollicitudin mattis eu sagittisnunc. In
+                    hac habitasse.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="artwork-card d-flex flex-column gap-4 p-3">
+              <div class="artwork-img">
+                <img src="./image/artwork23.png" alt="artwok20" class="w-100 h-100">
+              </div>
+                <div class="artwork-text d-flex flex-column gap-3">
+                  <h5 class="artwork-card-title">Lorem ipsum dolor sit .</h5>
+                  <p class="artwork-card-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    sed commodo est.Pellentesque eu placerat mauris. Etiam ut
+                    maximus ante. Suspendisse varius dolor nec bibendum dignissim.
+                    Proin in diam a justo sollicitudin mattis eu sagittisnunc. In
+                    hac habitasse.
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+    <!--  section  artwork end-->
+
+<!-- section  money start-->
+<section class="section-money section-padding section">
+  <div class="container">
+    <div class="section-title pb-5">
+      <h2 class="text-center">Lorem ipsum dolor sit amet,consectetur adipiscing elit.</h2>
+    </div>
+    <div class="section-container pt-5 section-money-container ">
+      <div class="row row-items-money">
+       <div class="col-md-6 col-sm-12 row-item">
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex justify-content-start align-items-center gap-5">
+            <img src="./image/save-money.png" alt="save money">
+            <h3 class="">Lorem ipsum dolor sit .</h3>
+          </div>
+          <p class="money-description">adipiscing elit. Ut sed commodo est.Pellentesque eu placerat mauris. ut maximus ante. Suspendisse varius dolor nec bibendum dignissim</p>
+          <button class="btn-item">Check Pricing</button>
+        </div>
+       </div>
+      <div class="col-md-6 remove-row-item"></div>
+      </div>
+
+      <div class="row row-items-money">
+        <div class="col-md-6 remove-row-item">
+
+        </div>
+        <div class="col-md-6  col-sm-12 row-item">
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex justify-content-start align-items-center gap-5">
+              <img src="./image/accuracy.png" alt="save money">
+              <h3>Lorem ipsum dolor sit .</h3>
+            </div>
+            <p class="money-description">adipiscing elit. Ut sed commodo est.Pellentesque eu placerat mauris. ut maximus ante. Suspendisse varius dolor nec bibendum dignissim</p>
+            <button class="btn-item">Check Pricing</button>
+          </div>
+         </div>
+      </div>
+
+      <div class="row row-items-money">
+        <div class=" col-lg-6 col-md-6 col-sm-12 row-item">
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex justify-content-start align-items-center gap-5">
+              <img src="./image/hairing.png" alt="save money">
+              <h3>Lorem ipsum dolor sit .</h3>
+            </div>
+            <p class="money-description">adipiscing elit. Ut sed commodo est.Pellentesque eu placerat mauris. ut maximus ante. Suspendisse varius dolor nec bibendum dignissim</p>
+            <button class="btn-item">Check Pricing</button>
+          </div>
+         </div>
+        <div class="col-md-6 remove-row-item ">
+        </div>
+      </div>
+
+      <div class="row row-items-money">
+        <div class="col-md-6 remove-row-item"></div>
+        <div class="col-md-6 col-sm-12 row-item">
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex justify-content-start align-items-center gap-5">
+              <img src="./image/money-back.png" alt="save money">
+              <h3>Lorem ipsum dolor sit .</h3>
+            </div>
+            <p class="money-description">adipiscing elit. Ut sed commodo est.Pellentesque eu placerat mauris. ut maximus ante. Suspendisse varius dolor nec bibendum dignissim</p>
+            <button class="btn-item">Check Pricing</button>
+          </div>
+         </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- section  money end-->
+
+<!-- testimonial section  start -->
+<section class="section-testimonial  pb-5 section ">
+  <div class="container">
+    <div class="section-title pb-5">
+      <h2 class="text-center">Lorem ipsum dolor sit .</h2>
+    </div>
+    <div class="section-container testimonial-container p-5">
+        <div class="d-flex justify-content-start align-items-center gap-3 ">
+          <img src="./image//606.png" alt="star" class="testimonial-img-star">
+          <h3>Lorem ipsum dolor sit .</h3>
+        </div>
+    </div>
+
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="testimonial-item d-flex flex-column gap-4  p-3">
+            <div class="testimonial-header d-flex justify-content-between">
+              <div class="d-flex justify-content-start align-items-center gap-2">
+                <img src="./image/testimonial-1.png" alt="image 1">
+                <div class="title d-flex flex-column gap-1">
+                  <h4>Jhon Doe</h4>
+                  <span>CEO</span>
+                </div>
+             </div>
+             <div class="star">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+             </div>
+            </div>
+            <p class="testimonial-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est. Pellentesque eu placerat mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo sollicitudin mattis eu sagittis nunc. In hac habitasse platea dictumst.
+            </p>
+        </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="testimonial-item d-flex flex-column gap-4  p-3">
+            <div class="testimonial-header d-flex justify-content-between">
+              <div class="d-flex justify-content-start align-items-center gap-2">
+                <img src="./image/testimonial-2.png" alt="image 1">
+                <div class="title d-flex flex-column gap-1">
+                  <h4>Amanda green</h4>
+                  <span>Operations Manager</span>
+                </div>
+             </div>
+             <div class="star">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+             </div>
+            </div>
+            <p class="testimonial-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est. Pellentesque eu placerat mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo sollicitudin mattis eu sagittis nunc. In hac habitasse platea dictumst.
+            </p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-item d-flex flex-column gap-4  p-3">
+            <div class="testimonial-header d-flex justify-content-between">
+              <div class="d-flex justify-content-start align-items-center gap-2">
+                <img src="./image/testimonial-3.png" alt="image 1">
+                <div class="title d-flex flex-column gap-1">
+                  <h4>Sam Cooper</h4>
+                  <span>Customer Service Manager</span>
+                </div>
+             </div>
+             <div class="star">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+                <img src="./image/star.png" alt="star" class="start-img">
+             </div>
+            </div>
+            <p class="testimonial-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est. Pellentesque eu placerat mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo sollicitudin mattis eu sagittis nunc. In hac habitasse platea dictumst.
+            </p>
+        </div>
+      </div>
+     
+      </div>
+        
+        
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section>
+<!-- testimonial section end -->
+
+
+<!-- logo-features section start -->
+<section class="logo-features section">
+<div class="container">
+  <div class="section-title pb-5">
+    <h2 class="text-center">Lorem ipsum dolor sit amet,consectetur adipiscing elit.</h2>
+  </div>
+  <!-- d-flex justify-content-between align-items-center flex-md-wrap -->
+    <div class="logo-container w-100 mx-auto">
+      <div class=" row section-logo-features">
+        <div class="col-md-4 col-sm-12">
+          <div class="d-flex flex-column align-items-center gap-2">
+            <img src="./image/logo1.png" alt="logo1" class="feature-logo-img1" >
+            <h5>Forms On Fire</h5>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="d-flex flex-column align-items-center gap-2 ">
+            <img src="./image/logo2.png" alt="logo2" class="feature-logo-img2 ">
+            <h5>ElectroNeek Studio IDE</h5>
+          </div>
+        </div>
+       
+       <div class="col-md-4 col-sm-12">
+        <div class="d-flex flex-column align-items-center gap-1">
+          <img src="./image/logo3.png" alt="logo3" class="feature-logo-img3">
+          <h5>Jot form</h5>
+        </div>
+       </div>
+      </div>
+    </div>
+</div>
+</section>
+</main>
+<!-- logo-features section start -->
+
+
+<!-- footer start -->
+<footer class="footer-padding bg-dark">
+  <div class="container">
+    <h4 class=" text-white d-flex justify-content-center align-items-end font-weight-bold">&copy; Helplama 2021</h4>
+  </div>
+</footer>
+<!-- footer end -->
+
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+  </body>
+</html>
